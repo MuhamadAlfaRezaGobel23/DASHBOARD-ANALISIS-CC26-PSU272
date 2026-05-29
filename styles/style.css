@@ -250,3 +250,28 @@ div[data-testid="stButton"]:has(button[id*="cat_"])>button:active{
     background:white!important;
     color:black!important;
 }
+
+@media (max-width:768px){
+
+    .main-title{
+        font-size:48px;
+    }
+
+    .sub-title{
+        font-size:24px;
+    }
+
+    .metric-box{
+        font-size:22px;
+        min-height:100px;
+    }
+
+    .overview-title{
+        font-size:32px;
+    }
+
+    .dataset-title{
+        font-size:28px;
+    }
+
+}
