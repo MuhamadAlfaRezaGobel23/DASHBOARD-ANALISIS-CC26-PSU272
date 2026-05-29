@@ -18,7 +18,7 @@ st.set_page_config(
 )
 
 with open(
-r"Dashboard Streamlit/styles/style.css"
+r"styles/style.css"
 ) as f:
     st.markdown(
         f"<style>{f.read()}</style>",
@@ -32,7 +32,7 @@ if "menu" not in st.session_state:
 with st.sidebar:
 
     st.image(
-        r"Dashboard Streamlit/assets/Logo Ecosort.png",
+        r"assets/Logo Ecosort.png",
         use_container_width=True
     )
 
@@ -223,45 +223,45 @@ if st.session_state.menu == "Dataset":
     image_data={
 
     "B3":[
-    r"Dashboard Streamlit/assets/B3_001.jpg",
-    r"Dashboard Streamlit/assets/B3_030.jpg",
-    r"Dashboard Streamlit/assets/B3_091.jpg",
-    r"Dashboard Streamlit/assets/B3_152.jpg",
+    r"assets/B3_001.jpg",
+    r"assets/B3_030.jpg",
+    r"assets/B3_091.jpg",
+    r"assets/B3_152.jpg",
     ],
 
     "Glass":[
-    r"Dashboard Streamlit\assets\Glass_169.jpg",
-    r"Dashboard Streamlit\assets\Glass_170.jpg",
-    r"Dashboard Streamlit\assets\Glass_171.jpg",
-    r"Dashboard Streamlit\assets\Glass_172.jpg",
+    r"assets\Glass_169.jpg",
+    r"assets\Glass_170.jpg",
+    r"assets\Glass_171.jpg",
+    r"assets\Glass_172.jpg",
     ],
 
     "Metal":[
-    r"Dashboard Streamlit\assets\Metal_017.jpg",
-    r"Dashboard Streamlit\assets\Metal_077.jpg",
-    r"Dashboard Streamlit\assets\Metal_078.jpg",
-    r"Dashboard Streamlit\assets\Metal_079.jpg",
+    r"assets\Metal_017.jpg",
+    r"assets\Metal_077.jpg",
+    r"assets\Metal_078.jpg",
+    r"assets\Metal_079.jpg",
     ],
 
     "Organic":[
-    r"Dashboard Streamlit\assets\Organic_001.jpg",
-    r"Dashboard Streamlit\assets\Organic_019.jpg",
-    r"Dashboard Streamlit\assets\Organic_020.jpg",
-    r"Dashboard Streamlit\assets\Organic_021.jpg",
+    r"assets\Organic_001.jpg",
+    r"assets\Organic_019.jpg",
+    r"assets\Organic_020.jpg",
+    r"assets\Organic_021.jpg",
     ],
 
     "Paper":[
-    r"Dashboard Streamlit\assets\Paper_024.jpg",
-    r"Dashboard Streamlit\assets\Paper_025.jpg",
-    r"Dashboard Streamlit\assets\Paper_026.jpg",
-    r"Dashboard Streamlit\assets\Paper_027.jpg",
+    r"assets\Paper_024.jpg",
+    r"assets\Paper_025.jpg",
+    r"assets\Paper_026.jpg",
+    r"assets\Paper_027.jpg",
     ],
 
     "Plastic":[
-    r"Dashboard Streamlit\assets\Plastic_001.jpg",
-    r"Dashboard Streamlit\assets\Plastic_002.jpg",
-    r"Dashboard Streamlit\assets\Plastic_003.jpg",
-    r"Dashboard Streamlit\assets\Plastic_004.jpg",
+    r"assets\Plastic_001.jpg",
+    r"assets\Plastic_002.jpg",
+    r"assets\Plastic_003.jpg",
+    r"assets\Plastic_004.jpg",
     ],
 
     }
@@ -368,7 +368,7 @@ if st.session_state.menu == "Dataset":
     st.markdown("<br>", unsafe_allow_html=True)
 
     df = pd.read_csv(
-    r"Dashboard Streamlit/dataset/data_bank_sampah_clean.csv"
+    r"dataset/data_bank_sampah_clean.csv"
     )
 
     rows_per_page=10
@@ -534,8 +534,8 @@ elif st.session_state.menu == "Dashboard":
 
         st.markdown("<br>", unsafe_allow_html=True)
 
-        dataset_path = "Dashboard Streamlit/Dataset Capstone"
-        clean_path = "Dashboard Streamlit/Dataset_Cleaned"
+        dataset_path = "Dataset Capstone"
+        clean_path = "Dataset_Cleaned"
 
         # =====================================================
         # VISUALISASI 1 - UKURAN GAMBAR
@@ -981,7 +981,7 @@ elif st.session_state.menu == "Dashboard":
         # =====================================================
         # PCA VISUALIZATION
         # =====================================================
-        df_final = pd.read_csv("Dashboard Streamlit/dataset/hasil_ekstraksi_fitur.csv")
+        df_final = pd.read_csv("dataset/hasil_ekstraksi_fitur.csv")
 
         @st.cache_data
         def load_pca(df_final):
