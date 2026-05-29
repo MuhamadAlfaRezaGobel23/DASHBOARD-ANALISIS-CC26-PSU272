@@ -230,38 +230,38 @@ if st.session_state.menu == "Dataset":
     ],
 
     "Glass":[
-    r"assets\Glass_169.jpg",
-    r"assets\Glass_170.jpg",
-    r"assets\Glass_171.jpg",
-    r"assets\Glass_172.jpg",
+    r"assets/Glass_169.jpg",
+    r"assets/Glass_170.jpg",
+    r"assets/Glass_171.jpg",
+    r"assets/Glass_172.jpg",
     ],
 
     "Metal":[
-    r"assets\Metal_017.jpg",
-    r"assets\Metal_077.jpg",
-    r"assets\Metal_078.jpg",
-    r"assets\Metal_079.jpg",
+    r"assets/Metal_017.jpg",
+    r"assets/Metal_077.jpg",
+    r"assets/Metal_078.jpg",
+    r"assets/Metal_079.jpg",
     ],
 
     "Organic":[
-    r"assets\Organic_001.jpg",
-    r"assets\Organic_019.jpg",
-    r"assets\Organic_020.jpg",
-    r"assets\Organic_021.jpg",
+    r"assets/Organic_001.jpg",
+    r"assets/Organic_019.jpg",
+    r"assets/Organic_020.jpg",
+    r"assets/Organic_021.jpg",
     ],
 
     "Paper":[
-    r"assets\Paper_024.jpg",
-    r"assets\Paper_025.jpg",
-    r"assets\Paper_026.jpg",
-    r"assets\Paper_027.jpg",
+    r"assets/Paper_024.jpg",
+    r"assets/Paper_025.jpg",
+    r"assets/Paper_026.jpg",
+    r"assets/Paper_027.jpg",
     ],
 
     "Plastic":[
-    r"assets\Plastic_001.jpg",
-    r"assets\Plastic_002.jpg",
-    r"assets\Plastic_003.jpg",
-    r"assets\Plastic_004.jpg",
+    r"assets/Plastic_001.jpg",
+    r"assets/Plastic_002.jpg",
+    r"assets/Plastic_003.jpg",
+    r"assets/Plastic_004.jpg",
     ],
 
     }
